@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Beadandó</title>
+</head>
+
+<body>
+    <div>
+        <h1>Burgonya térkép</h1>
+        <div id="grid" class="grid"></div>
+
+        <div class="elements">
+            <div id="seasons">
+                <div class="season" id="spring">Tavasz <br> <span id="springSpan"></span></div>
+                <div class="season" id="summer">Nyár <br>  <span id="summerSpan"></span></div>
+                <div class="season" id="fall">Ősz <br>  <span id="fallSpan"></span></div>
+                <div class="season" id="winter">Tél <br>  <span id="winterSpan"></span></div>
+            </div>
+            <p id="points">Összesen: </p>
+            <div id="tasks">
+                <h2 id="szn">Jelenlegi évszak: <span id="sznTag"></span> </h2>
+                <hr>
+                <div id="missions">
+                    <div id="missionA">
+                        <img class="missionIMG" id="missionIMG_A" src="" alt="">
+                        <p class="imgLetter">A</p>
+                    </div>
+                    <div id="missionB">
+                        <img class="missionIMG" id="missionIMG_B" src="" alt="">
+                        <p class="imgLetter">B</p>
+                    </div>
+                    <div id="missionC">
+                        <img class="missionIMG" id="missionIMG_C" src="" alt="">
+                        <p class="imgLetter">C</p>
+                    </div>
+                    <div id="missionD">
+                        <img class="missionIMG" id="missionIMG_D" src="" alt="">
+                        <p class="imgLetter">D</p>
+                    </div>
+                </div>
+                <h2 >Évszakból hátralévő idő: <span id="timeLeft"></span></h2>
+                <hr>
+                <h2>Lehelyezendő elem: </h2>
+                <p id="time"></p>
+                <div id="shapeActions">
+                    <div id="buttons">
+                        <button id="rotate">Forgatás</button>
+                        <button id="mirror">Tükrözés</button>
+                    </div>
+                    <div id="shape">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

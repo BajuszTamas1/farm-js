@@ -1,0 +1,437 @@
+body::after {
+    content: "";
+    background: url(theme.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+h1{
+    margin: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.grid { 
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(11, 1fr);;
+    width: 440px;
+    height: 440px;
+    float: left;
+    border: 3px solid white;
+    border-radius: 5px;
+    margin-left: 50px;
+    background-color: white;
+}
+.cell {
+    background-image: url(tiles/base_tile.png);
+    background-size: 38px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+}
+
+.mountain{
+    background-image: url(tiles/mountain_tile.png);
+    background-size: 38px;
+}
+
+.hover-green {
+    border: 2px solid rgba(0, 255, 0, 0.5);
+    background-color: rgba(0, 255, 0, 0.5);
+}
+.hover-red {
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.water{
+    background-image: url(tiles/water_tile.png);
+    background-size: 38px;
+}
+.town{
+    background-image: url(tiles/village_tile.png);
+    background-size: 38px;
+}
+.forest{
+    background-image: url(tiles/forest_tile.png);
+    background-size: 38px;
+}
+.farm{
+    background-image: url(tiles/plains_tile.png);
+    background-size: 38px;
+}
+
+.table-item {
+    width: 40px;
+    margin: 1px;
+    text-align: center;
+    border: 5px solid white;
+    border-radius: 5px;
+
+}
+
+.table{
+    width: 135px;
+    height: 135px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.missionIMG{
+    width: 250px;
+}
+
+#missions{
+    display:inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+#missionA,#missionB,#missionC,#missionD{
+    position:relative;
+}
+
+#missionA p,#missionB p,#missionC p,#missionD p{
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    right: 5%;
+    top: 55px;
+    z-index: 1;
+
+}
+
+.activeMission{
+    border: 3px solid greenyellow;
+    border-radius: 10px;
+}
+
+
+#time{
+    font-weight: bold;
+    font-size: large;
+    margin-left: 250px;
+    margin-top: -35px;
+    margin-bottom: 10px;
+}
+
+table{
+    background-color: white;
+    padding:5px;
+    border-radius: 5px;
+    
+}
+
+h2{
+    font-size: larger;
+    font-weight: bold;
+}
+
+#shapeActions{
+    display: inline;
+}
+
+#shape{
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    float: left;
+    border-radius: 10px;
+    margin-left: 10px;
+    width: 145px;
+    height: 145px;
+    border: 2px solid white;
+    background-color: white;
+}
+
+.elements{
+    float: left;   
+    margin-left: 100px; 
+    display: grid;
+}
+
+#points{
+    text-align: center;
+    font-weight: bold;
+    margin-left: -300px;
+}
+
+#seasons{
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+.season{
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#spring{
+    border: 3px solid green;
+    background-color: rgb(9, 219, 20);
+    border-radius: 5px;
+}
+
+#summer{
+    border: 3px solid rgb(196, 196, 4);
+    background-color: rgb(238, 238, 146);
+    border-radius: 5px;
+}
+
+#fall{
+    border: 3px solid rgb(250, 104, 88);
+    background-color: salmon;
+    border-radius: 5px;
+}
+
+#winter{
+    border: 3px solid rgb(5, 140, 185);
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+hr{
+    color: black;
+    border: 1px solid black;
+}
+
+button{
+    border: 0;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+    font-size: large;
+    font-weight: bold;
+    background-color: white;
+    margin: 5px;
+    margin-left: 100px;
+}
+
+#buttons{
+    display: grid;
+    float: left;
+}
+
+.faded{
+    opacity: 0.5;
+    transition:  opacity 0.3;
+}
+
+@media only screen and (max-width: 1100px){
+    body::after {
+        content: "";
+        background: url(theme.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+      }
+    h1{
+        margin: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    
+    .mountain{
+        background-image: url(tiles/mountain_tile.png);
+        background-size: 38px;
+    }
+    
+    .hover-green {
+        border: 2px solid rgba(0, 255, 0, 0.5);
+        background-color: rgba(0, 255, 0, 0.5);
+    }
+    .hover-red {
+        border: 2px solid rgba(255, 0, 0, 0.5);
+        background-color: rgba(255, 0, 0, 0.5);
+    }
+    
+    .water{
+        background-image: url(tiles/water_tile.png);
+        background-size: 38px;
+    }
+    .town{
+        background-image: url(tiles/village_tile.png);
+        background-size: 38px;
+    }
+    .forest{
+        background-image: url(tiles/forest_tile.png);
+        background-size: 38px;
+    }
+    .farm{
+        background-image: url(tiles/plains_tile.png);
+        background-size: 38px;
+    }
+    
+    .table-item {
+        height: 40px;
+        width: 40px;
+        margin: 1px;
+        text-align: center;
+        border: 5px solid white;
+        border-radius: 5px;
+    
+    }
+    
+    .table{
+        width: 135px;
+        height: 135px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+    
+    
+    table{
+        background-color: white;
+        padding:5px;    
+        width: 395px;
+    }
+    
+    h2{
+        font-size: larger;
+        font-weight: bold;
+    }
+
+    .missionIMG{
+        width: 200px;
+    }
+    
+    #missions{
+        display:inline-grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        margin-bottom: 20px;
+    }
+    
+    #missionA,#missionB,#missionC,#missionD{
+        position: relative;
+    }
+    
+    #missionA p,#missionB p,#missionC p,#missionD p{
+        font-size: small;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        right: 5%;
+        top: 45px;
+        z-index: 1;
+    
+    }
+    
+    #shapeActions{
+        display: inline;
+    }
+    
+    #shape{
+        display: grid;
+        grid-template-columns: repeat(3, 50px);
+        float: left;
+        border-radius: 10px;
+        margin-left: 20px;
+    }
+    
+    .elements{
+        float: left;   
+        margin-left: 100px; 
+        display: grid;
+    }
+    
+    #points{
+        text-align: center;
+        font-weight: bold;
+        margin-left: -175px;
+        font-size: small;
+    }
+    
+    #seasons{
+        display: flex;
+        color: white;
+        font-weight: bold;
+        font-size: small;
+    }
+    
+    .season{
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+        text-align: center;
+        padding: 5px 0;
+    }
+    
+    #spring{
+        border: 3px solid green;
+        background-color: rgb(9, 219, 20);
+        border-radius: 5px;
+    }
+    
+    #summer{
+        border: 3px solid rgb(196, 196, 4);
+        background-color: rgb(238, 238, 146);
+        border-radius: 5px;
+    }
+    
+    #fall{
+        border: 3px solid rgb(250, 104, 88);
+        background-color: salmon;
+        border-radius: 5px;
+    }
+    
+    #winter{
+        border: 3px solid rgb(5, 140, 185);
+        background-color: lightblue;
+        border-radius: 5px;
+    }
+    
+    hr{
+        color: black;
+        border: 1px solid black;
+    }
+    
+    button{
+        border: 0;
+        border-radius: 5px;
+        height: 45px;
+        width: 90px;
+        font-weight: bold;
+        background-color: white;
+        margin: 5px;
+        margin-left: 100px;
+    }
+    
+    #buttons{
+        display: grid;
+        float: left;
+    }
+    
+    .faded{
+        opacity: 0.5;
+        transition:  opacity 0.3;
+    }
+    #time{
+        margin-left: 235px;
+        margin-bottom: 10px;
+    }
+}
